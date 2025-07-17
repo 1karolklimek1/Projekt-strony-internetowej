@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Lotniska</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="../index/index.html" class="logo-link">
+                <img src="logo.png" alt="Logo" class="logo-image">
+                <h1 class="logo-text">Lotnisko Kraków</h1>
+            </a>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index/index.html">Home</a></li>
+                <li><a href="../przyloty/arrivals.html">Przyloty</a></li>
+                <li><a href="../odloty/departures.html">Odloty</a></li>
+                <li><a href="../mapa/map.html">Mapa</a></li>
+                <li><a href="../uslugi/services.html">Usługi</a></li>
+                <li><a href="../transport/transport.html">Transport</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="map-container">
+        <h2>Znajdź Nas</h2>
+        <div id="map"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="links">
+            <div>
+                <h3>Partnerzy</h3>
+                <ul>
+                    <li>Urząd lotnictwa cywilnego</li>
+                    <li>Polska agencja żeglugi powietrznej</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Użyteczne Linki</h3>
+                <ul>
+                    <li><a href="../mapa/map.html">Mapa</a></li>
+                    <li><a href="../faq/faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Social Media</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Kontakt</h3>
+                <p>Adres:  Medweckiego 1, 32-083 Balice</p>
+                <p>Telefon: +48 997 998 999</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><i>&copy; 2025 Lotnisko Kraków. Wszelkie prawa zastrzeżone.</i></p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Initialize the map
+            const map = L.map('map').setView([50.08159432044458, 19.78838256206852], 13); 
+            
+            // Add OpenStreetMap tile layer
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+            }).addTo(map);
+
+            // Add a marker with a popup
+            const marker = L.marker([50.08159432044458, 19.78838256206852]).addTo(map);
+            marker.bindPopup("<b>Międzynarodowe Lotnisko W Krakowie</b>").openPopup();
+        });
+    </script>
+</body>
+</html>

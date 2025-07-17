@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport z i na Lotnisko</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="../index/index.html" class="logo-link">
+                <img src="logo.png" alt="Logo" class="logo-image">
+                <h1 class="logo-text">Lotnisko Kraków</h1>
+            </a>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index/index.html">Home</a></li>
+                <li><a href="../przyloty/arrivals.html">Przyloty</a></li>
+                <li><a href="../odloty/departures.html">Odloty</a></li>
+                <li><a href="../mapa/map.html">Mapa</a></li>
+                <li><a href="../uslugi/services.html">Usługi</a></li>
+                <li><a href="../transport/transport.html">Transport</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="services-container">
+        <h2>Transport z i na Lotnisko</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <h3>Kolej</h3>
+                <p>Szybkie połączenia kolejowe zapewniają bezpośredni dojazd z lotniska do centrum Krakowa. Pociągi kursują co 30 minut, a podróż trwa około 20 minut.</p>
+                <div class="gallery">
+                    <button class="gallery-control prev">⟨</button>
+                    <div class="gallery-images">
+                        <img src="./photos/train1.jpg" alt="Train 1">
+                        <img src="./photos/train2.jpg" alt="Train 2">
+                        <img src="./photos/train3.jpg" alt="Train 3">
+                    </div>
+                    <button class="gallery-control next">⟩</button>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <h3>Autobusy</h3>
+                <p>Linie autobusowe miejskie i dalekobieżne umożliwiają łatwy dojazd do różnych części Krakowa i innych miast. Przystanki znajdują się tuż przy terminalu.</p>
+                <div class="gallery">
+                    <button class="gallery-control prev">⟨</button>
+                    <div class="gallery-images">
+                        <img src="./photos/bus1.jpg" alt="Bus 1">
+                        <img src="./photos/bus2.jpg" alt="Bus 2">
+                    </div>
+                    <button class="gallery-control next">⟩</button>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <h3>Taksówki</h3>
+                <p>Taksówki są dostępne 24/7 przy wyjściu z terminala. Zapewniają szybki i komfortowy dojazd do dowolnego miejsca w Krakowie.</p>
+                <div class="gallery">
+                    <button class="gallery-control prev">⟨</button>
+                    <div class="gallery-images">
+                        <img src="./photos/taxi1.jpg" alt="Taxi 1">
+                        <img src="./photos/taxi2.jpg" alt="Taxi 2">
+                    </div>
+                    <button class="gallery-control next">⟩</button>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <h3>Wynajem Samochodów</h3>
+                <p>Na lotnisku dostępne są liczne wypożyczalnie samochodów, oferujące szeroki wybór pojazdów w konkurencyjnych cenach.</p>
+                <div class="gallery">
+                    <button class="gallery-control prev">⟨</button>
+                    <div class="gallery-images">
+                        <img src="./photos/car_rental1.jpg" alt="Car Rental 1">
+                        <img src="./photos/car_rental2.jpg" alt="Car Rental 2">
+                    </div>
+                    <button class="gallery-control next">⟩</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="links">
+            <div>
+                <h3>Partnerzy</h3>
+                <ul>
+                    <li>Urząd lotnictwa cywilnego</li>
+                    <li>Polska agencja żeglugi powietrznej</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Użyteczne Linki</h3>
+                <ul>
+                    <li><a href="../mapa/map.html">Mapa</a></li>
+                    <li><a href="../faq/faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Social Media</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Kontakt</h3>
+                <p>Adres: Medweckiego 1, 32-083 Balice</p>
+                <p>Telefon: +48 997 998 999</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><i>&copy; 2025 Lotnisko Kraków. Wszelkie prawa zastrzeżone.</i></p>
+        </div>
+    </footer>
+</body>
+</html>

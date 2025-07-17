@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Lotniska</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="../index/index.html" class="logo-link">
+                <img src="logo.png" alt="Logo" class="logo-image">
+                <h1 class="logo-text">Lotnisko Kraków</h1>
+            </a>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index/index.html">Home</a></li>
+                <li><a href="../przyloty/arrivals.html">Przyloty</a></li>
+                <li><a href="../odloty/departures.html">Odloty</a></li>
+                <li><a href="../mapa/map.html">Mapa</a></li>
+                <li><a href="../uslugi/services.html">Usługi</a></li>
+                <li><a href="../transport/transport.html">Transport</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="services-container">
+        <h2>Usługi Lotniskowe</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <h3>Bary i Restauracje</h3>
+                <p>Na naszym lotnisku znajdziesz szeroki wybór barów i restauracji, oferujących dania kuchni międzynarodowej oraz lokalnej.</p>
+                <div class="gallery">
+                    <button class="gallery-control prev">⟨</button>
+                    <div class="gallery-images">
+                        <img src="./photos/bar1.jpg" alt="Bar 1">
+                        <img src="./photos/bar2.jpg" alt="Bar 2">
+                        <img src="./photos/bar3.jpg" alt="Bar 3">
+                    </div>
+                    <button class="gallery-control next">⟩</button>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <h3>Strefy Relaksu</h3>
+                <p>Skorzystaj z wygodnych stref relaksu, idealnych do odpoczynku przed lotem.</p>
+                <div class="gallery">
+                    <button class="gallery-control prev">⟨</button>
+                    <div class="gallery-images">
+                        <img src="./photos/relax1.jpg" alt="Relax 1">
+                        <img src="./photos/relax2.jpg" alt="Relax 2">
+                        <img src="./photos/relax3.jpg" alt="Relax 3">
+                    </div>
+                    <button class="gallery-control next">⟩</button>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <h3>Sklepy i Butiki</h3>
+                <p>Zapraszamy do odwiedzenia naszych sklepów duty-free, gdzie znajdziesz szeroki wybór produktów w atrakcyjnych cenach.</p>
+                <div class="gallery">
+                    <button class="gallery-control prev">⟨</button>
+                    <div class="gallery-images">
+                        <img src="./photos/shop1.jpg" alt="Shop 1">
+                        <img src="./photos/shop2.jpg" alt="Shop 2">
+                        <img src="./photos/shop3.jpg" alt="Shop 3">
+                    </div>
+                    <button class="gallery-control next">⟩</button>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <h3>Wsparcie dla Osób Niepełnosprawnych</h3>
+                <p>Oferujemy pełne wsparcie dla osób niepełnosprawnych, w tym dostęp do wind oraz specjalnych stref.</p>
+                <div class="gallery">
+                    <button class="gallery-control prev">⟨</button>
+                    <div class="gallery-images">
+                        <img src="./photos/support1.jpg" alt="Support 1">
+                        <img src="./photos/support2.jpg" alt="Support 2">
+                        <img src="./photos/support3.jpg" alt="Support 3">
+                    </div>
+                    <button class="gallery-control next">⟩</button>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <h3>Usługi VIP</h3>
+                <p>Skorzystaj z ekskluzywnej obsługi VIP, w tym dostęp do prywatnych salonów oraz szybkiej odprawy.</p>
+                <div class="gallery">
+                    <button class="gallery-control prev">⟨</button>
+                    <div class="gallery-images">
+                        <img src="./photos/vip1.jpg" alt="Vip 1">
+                        <img src="./photos/vip2.jpg" alt="Vip 2">
+                        <img src="./photos/vip3.jpg" alt="Vip 3">
+                    </div>
+                    <button class="gallery-control next">⟩</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="links">
+            <div>
+                <h3>Partnerzy</h3>
+                <ul>
+                    <li>Urząd lotnictwa cywilnego</li>
+                    <li>Polska agencja żeglugi powietrznej</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Użyteczne Linki</h3>
+                <ul>
+                    <li><a href="../mapa/map.html">Mapa</a></li>
+                    <li><a href="../faq/faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Social Media</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Kontakt</h3>
+                <p>Adres: Medweckiego 1, 32-083 Balice</p>
+                <p>Telefon: +48 997 998 999</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><i>&copy; 2025 Lotnisko Kraków. Wszelkie prawa zastrzeżone.</i></p>
+        </div>
+    </footer>
+</body>
+</html>

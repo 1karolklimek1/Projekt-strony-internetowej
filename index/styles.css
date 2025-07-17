@@ -1,0 +1,311 @@
+/* Global Styles */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Nagłówek */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 32px 20px;
+}
+
+/* Logo z linkiem */
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Usuń podkreślenie */
+    color: inherit; /* Dziedziczenie koloru */
+}
+
+/* Obraz logo */
+.logo-image {
+    height: 100px;
+    margin-right: 10px; /* Odstęp między logo a tekstem */
+}
+
+/* Tekst logo */
+.logo-text {
+    font-size: 2rem; /* Rozmiar tekstu dopasowany do menu */
+    font-weight: bold; /* Pogrubienie jak w menu */
+    color: #fff; /* Biały kolor */
+    transition: color 0.3s ease; /* Dodanie animacji */
+}
+
+/* Link hover dla logo */
+.logo-link:hover .logo-text {
+    color: #ccc; /* Zmiana koloru tekstu na hover */
+}
+
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.header .logo img {
+    height: 80px;
+    margin-right: 10px;
+    background-color: transparent;
+}
+
+
+.hamburger { /*dodane*/
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav ul { /*dodane*/ 
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav { /*dodane*/
+    display: flex;
+    z-index: 10000000;
+}
+
+
+.header .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.header .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.header .nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero input {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Gallery */
+.gallery {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gallery h2 {
+    margin-bottom: 20px;
+}
+
+.gallery .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery img {
+    max-width: 100%;
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer {
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer .links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 5px;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom{
+    font-size: small;
+}
+
+
+
+/* Main Content */
+.content {
+    padding: 20px; /* Ogólny padding */
+}
+
+.content section h2 {
+    margin-left: 10px; /* Dodanie marginesu z lewej strony */
+    margin-right: 10px; /* Dodanie marginesu z prawej strony */
+    text-align: left; /* Wyrównanie nagłówka do lewej */
+}
+
+.content section p, .content section ul {
+    margin-left: 10px; /* Dodanie marginesu do treści, list */
+    margin-right: 10px; /* Zapewnienie przestrzeni z prawej */
+}
+
+.facilities-content ul, .transport-content ul {
+    padding-left: 20px; /* Wcięcie listy z lewej strony */
+}
+
+.no-results {
+    color: #999;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) { /*dodane*/
+    .header {
+        position: relative; /* Dodane */
+        z-index: 1000; /* Dodane - ten sam z-index co nav */
+    }
+   
+    .hamburger {
+        display: block; /* Pokaż przycisk hamburgera */
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%; /* Zmienione z top: 60px na top: 100% */
+        left: 0;
+        width: 100%;
+        background-color: #2d2d2d;
+        z-index: 1000;
+    }
+
+    .nav.active {
+        display: block;
+    }
+
+    .hero {
+        position: relative;
+        z-index: 1; /* Dodane - umieszcza hero section pod menu */
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center; /* Zmienione z flex-start na center */
+        text-align: center; /* Dodane */
+        gap: 10px;
+        padding: 10px;
+        width: 100%; /* Dodane */
+    }
+
+    .nav ul li {
+        width: 100%; /* Dodane */
+        text-align: center; /* Dodane */
+    }
+
+    .nav ul li a {
+        display: block; /* Dodane */
+        padding: 10px 0; /* Dodane */
+    }
+
+}
+
+
+/* SUGESTIE */
+.suggestions-list {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+    max-width: 300px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.suggestions-list .no-results {
+    color: #999;
+    text-align: center;
+}
+
+.suggestions-list li .flight-number {
+    color: #2d2d2d; /* Ciemny szary dla numeru lotu */
+    font-weight: bold;
+}
+
+.suggestions-list li .details {
+    color: #555; /* Średni szary dla szczegółów */
+    font-size: 0.9rem;
+}
+
+.suggestions-list li .status {
+    color: #007bff; /* Niebieski dla statusu */
+    font-size: 0.85rem;
+    font-style: italic;
+}

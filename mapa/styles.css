@@ -1,0 +1,208 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Nagłówek */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 32px 20px;
+}
+
+/* Logo z linkiem */
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Usuń podkreślenie */
+    color: inherit; /* Dziedziczenie koloru */
+}
+
+/* Obraz logo */
+.logo-image {
+    height: 50px;
+    margin-right: 10px; /* Odstęp między logo a tekstem */
+}
+
+/* Tekst logo */
+.logo-text {
+    font-size: 2rem; /* Rozmiar tekstu dopasowany do menu */
+    font-weight: bold; /* Pogrubienie jak w menu */
+    color: #fff; /* Biały kolor */
+    transition: color 0.3s ease; /* Dodanie animacji */
+}
+
+/* Link hover dla logo */
+.logo-link:hover .logo-text {
+    color: #ccc; /* Zmiana koloru tekstu na hover */
+}
+
+
+
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.header .logo img {
+    height: 80px;
+    margin-right: 10px;
+    background-color: transparent;
+}
+
+
+.hamburger { /*dodane*/
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav ul { /*dodane*/ 
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav { /*dodane*/
+    display: flex;
+}
+
+
+.header .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.header .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.header .nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer .links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 5px;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom{
+    font-size: small;
+}
+
+
+@media (max-width: 768px) { /*dodane*/
+    .header {
+        position: relative; /* Dodane */
+        z-index: 1000; /* Dodane - ten sam z-index co nav */
+    }
+   
+    .hamburger {
+        display: block; /* Pokaż przycisk hamburgera */
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%; /* Zmienione z top: 60px na top: 100% */
+        left: 0;
+        width: 100%;
+        background-color: #2d2d2d;
+        z-index: 1000;
+    }
+
+    .nav.active {
+        display: block;
+    }
+
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center; /* Zmienione z flex-start na center */
+        text-align: center; /* Dodane */
+        gap: 10px;
+        padding: 10px;
+        width: 100%; /* Dodane */
+    }
+
+    .nav ul li {
+        width: 100%; /* Dodane */
+        text-align: center; /* Dodane */
+    }
+
+    .nav ul li a {
+        display: block; /* Dodane */
+        padding: 10px 0; /* Dodane */
+    }
+
+}
+
+/* Map Styles */
+.map-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.map-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+#map {
+    height: 500px; /* Set map height */
+    width: 80%; /* Full width */
+    border: 2px solid #2d2d2d; /* Optional border */
+    border-radius: 10px; /* Rounded corners */
+    margin: 0 auto;
+}
+

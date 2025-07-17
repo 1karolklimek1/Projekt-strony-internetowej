@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotnisko Kraków</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="../index/index.html" class="logo-link">
+                <img src="logo.png" alt="Logo" class="logo-image">
+                <h1 class="logo-text">Lotnisko Kraków</h1>
+            </a>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation"> <!--dodane-->
+            &#9776; <!--dodane-->
+        </button> <!--dodane-->
+        <nav class="nav">
+            <ul>
+                <li><a href="../index/index.html">Home</a></li>
+                <li><a href="../przyloty/arrivals.html">Przyloty</a></li>
+                <li><a href="../odloty/departures.html">Odloty</a></li>
+                <li><a href="../mapa/map.html">Mapa</a></li>
+                <li><a href="../uslugi/services.html">Usługi</a></li>
+                <li><a href="../transport/transport.html">Transport</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Wyszukiwanie lotow-->
+	<section class="hero">
+		<div class="overlay">
+			<h2>Znajdź Lot</h2>
+			<input type="text" id="flight-search" placeholder="Wpisz numer lotu">
+			<ul id="search-suggestions" class="suggestions-list"></ul>
+		</div>
+	</section>
+
+    
+    <main class="content">
+        <section class="gallery" id="gallery">
+            <!--<h2>Gallery</h2>-->
+            <div class="image-container">
+                <img id="gallery-image" src="gallery1.jpg" alt="Gallery image 1">
+            </div>
+        </section>
+
+        <section class="info" id="info">
+            <div class="text">
+                <h2>O lotnisku</h2>
+                <p>
+                    Międzynarodowy Port Lotniczy im. Jana Pawła II Kraków-Balice (IATA: KRK) to jedno z najważniejszych lotnisk w Polsce, 
+					zlokalizowane około 11 km na zachód od centrum Krakowa, w miejscowości Balice. Lotnisko, otwarte w 1964 roku, zostało w 1995 
+					roku nazwane na cześć papieża Jana Pawła II. Jest drugim co do wielkości portem lotniczym w kraju, obsługującym ponad 8 milionów 
+					pasażerów rocznie. Balice oferuje nowoczesną infrastrukturę, w tym dwa terminale: Terminal 1 dla lotów międzynarodowych oraz Terminal 
+					2 dla połączeń krajowych. Dzięki swojemu położeniu i rozwiniętej siatce połączeń lotnisko stanowi ważny węzeł komunikacyjny dla 
+					południowej Polski i jest popularnym wyborem wśród turystów odwiedzających Kraków i okoliczne atrakcje.</p>
+            </div>
+        </section>
+
+        <section class="facilities" id="facilities">
+            <div class="facilities-content">
+                <h2>Udogodnienia i Usługi</h2>
+                <ul>
+                    <li>Bary i Restauracje</li>
+                    <li>Bankomaty</li>
+                    <li>Banki</li>
+                    <li>Kantory Wymiany Walut</li>
+                    <li>Lotniskowy Hotel</li>
+                    <li>Wsparcie Dla Osób Ze Szczególnymi Potrzebami</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="transport" id="transport">
+            <div class="transport-content">
+                <h2>Transport</h2>
+                
+                <p>Zaleca się korzystanie z transportu publicznego oraz prywatnego podczas poruszania się po Krakowie. 
+                    Oto dostępne opcje:</p> 
+                    <ul> 
+                        <li><strong>Autobus:</strong> Niektóre autobusy odjeżdżają z lotniska w Krakowie do
+                             centrum miasta.</li>
+                              <li><strong>Taksówka:</strong> Pasażerowie mogą zarezerwować taksówkę lub 
+                                prywatną taksówkę przed swoim przyjazdem.</li> 
+                                <li><strong>Wynajem samochodu:</strong> Pasażerowie mogą wynająć samochód 
+                                    na lotnisku w Krakowie, a także skorzystać z usługi kierowcy.</li> 
+                    </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="links">
+            <div>
+                <h3>Partnerzy</h3>
+                <ul>
+                    <li>Urząd lotnictwa cywilnego</li>
+                    <li>Polska agencja żeglugi powietrznej</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Użyteczne Linki</h3>
+                <ul>
+                    <li><a href="../mapa/map.html">Mapa</a></li>
+                    <li><a href="../faq/faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Social Media</h3>
+                <ul>
+                    <li>Facebook</li></a>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Kontakt</h3>
+                <p>Adres:  Medweckiego 1, 32-083 Balice</p>
+                <p>Telefon: +48 997 998 999</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><i>&copy; 2025 Lotnisko Kraków. Wszelkie prawa zastrzeżone.</i></p>
+        </div>
+    </footer>
+</body>
+</html>
